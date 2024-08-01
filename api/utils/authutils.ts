@@ -1,0 +1,1 @@
+export const isAdmin = (groups: string[]): boolean => groups.includes('admin');
