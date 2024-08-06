@@ -1,8 +1,5 @@
-Here's an improved version of your README with grammatical and syntax corrections, as well as some slight expansions for clarity:
 
----
-
-# Task Management System API:chart_with_upwards_trend:
+# Task Management System API: :chart_with_upwards_trend:
 
 ## Objective
 
@@ -86,5 +83,5 @@ Develop a RESTful API for a simple task management system that allows users to m
 
 ---
 
-For further questions or assistance, feel free to reach out. Happy coding!:smiley:
+For further questions or assistance, feel free to reach out. Happy coding! :smiley:
 
