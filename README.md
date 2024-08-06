@@ -106,7 +106,12 @@ task-management-system/
    ```
 
 4. **Set Up Environment Variables:**
-   - Create a `.env` file and add the necessary environment variables.
+Create a `.env` file and add the necessary environment variables:
+   - MONGO_URI=''
+   - PORT=''
+   - COGNITO_CLIENT_ID=''
+   - USER_POOL_ID=''
+   - AWS_REGION=''
 
 5. **Run the Application:**
    ```bash
