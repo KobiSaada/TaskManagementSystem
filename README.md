@@ -5,12 +5,12 @@
 
 Develop a RESTful API for a simple task management system that allows users to manage projects and tasks. User authentication is implemented using AWS Cognito.
 
-## Design Stracture
+## Design Structure (Next.js client-side and Docker not implemented yet)
 ![Untitled Diagram drawio (2)](https://github.com/user-attachments/assets/e2e32c05-03f1-4b10-a743-36640498fa45)
 
 
 
-## Project Stracture
+## Project Structure
    ```bash
 task-management-system/
 ├── api/
