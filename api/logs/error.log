@@ -15,3 +15,30 @@
 {"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:36:05.740Z"}
 {"level":"error","message":"Unexpected token k in JSON at position 13","stack":"SyntaxError: Unexpected token k in JSON at position 13\n    at JSON.parse (<anonymous>)\n    at parse (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:238:16)\n    at done (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:517:28)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1400:12)","timestamp":"2024-08-01T15:28:55.613Z"}
 {"level":"error","message":"Unexpected token k in JSON at position 13","stack":"SyntaxError: Unexpected token k in JSON at position 13\n    at JSON.parse (<anonymous>)\n    at parse (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:238:16)\n    at done (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:517:28)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1400:12)","timestamp":"2024-08-06T11:43:34.834Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T15:28:54.463Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T15:28:54.483Z"}
+{"level":"error","message":"Error in updateTask: Failed to update task","timestamp":"2024-08-06T15:28:55.543Z"}
+{"level":"error","message":"Error in deleteTask: Failed to delete task","timestamp":"2024-08-06T15:28:55.574Z"}
+{"level":"error","message":"Error in listTasks: Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T15:28:55.592Z"}
+{"level":"error","message":"Error in listTasks: Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T15:28:55.598Z"}
+{"level":"error","message":"Error in getTask: Failed to retrieve task","timestamp":"2024-08-06T15:28:55.608Z"}
+{"level":"error","message":"Error in updateTask: Failed to update task","timestamp":"2024-08-06T18:39:19.579Z"}
+{"level":"error","message":"Error in deleteTask: Failed to delete task","timestamp":"2024-08-06T18:39:19.694Z"}
+{"level":"error","message":"Error in listTasks: Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:39:19.703Z"}
+{"level":"error","message":"Error in listTasks: Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:39:19.706Z"}
+{"level":"error","message":"Error in getTask: Failed to retrieve task","timestamp":"2024-08-06T18:39:19.714Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:39:19.705Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:39:19.734Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:44:22.095Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:44:22.112Z"}
+{"level":"error","message":"Error in updateTask: Failed to update task","timestamp":"2024-08-06T18:44:24.990Z"}
+{"level":"error","message":"Error in deleteTask: Failed to delete task","timestamp":"2024-08-06T18:44:25.024Z"}
+{"level":"error","message":"Error in listTasks: Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:44:25.026Z"}
+{"level":"error","message":"Error in listTasks: Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:44:25.033Z"}
+{"level":"error","message":"Error in getTask: Failed to retrieve task","timestamp":"2024-08-06T18:44:25.043Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:52:28.686Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T18:52:28.863Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T19:23:46.946Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T19:23:46.981Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T19:26:20.716Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'page')","timestamp":"2024-08-06T19:26:20.732Z"}
