@@ -106,19 +106,20 @@ task-management-system/
    ```
 
 4. **Set Up Environment Variables:**
-Create a `.env` file and add the necessary environment variables:
+   
+ Create a `.env` file and add the necessary environment variables:
    - MONGO_URI=''
    - PORT=''
    - COGNITO_CLIENT_ID=''
    - USER_POOL_ID=''
    - AWS_REGION=''
 
-5. **Run the Application:**
+6. **Run the Application:**
    ```bash
    npm start
    ```
 
-6. **Test With Curl:**
+7. **Test With Curl:**
    ```bash
     curl -X POST http://localhost:3002/api/users/register \
           -H "Content-Type: application/json" \
@@ -126,7 +127,7 @@ Create a `.env` file and add the necessary environment variables:
    ```
    
 
-7. **Run Tests(need to implement):**
+8. **Run Tests(need to implement):**
    ```bash
    npm test
    ```
