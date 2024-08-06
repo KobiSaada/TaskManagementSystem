@@ -1,16 +1,20 @@
-# Task Management System API
+Here's an improved version of your README with grammatical and syntax corrections, as well as some slight expansions for clarity:
+
+---
+
+# Task Management System API:chart_with_upwards_trend:
 
 ## Objective
 
-Develop a RESTful API for a simple task management system that allows users to manage projects and tasks. User authentication will be implemented using AWS Cognito. The code should be clean, well-documented, and adhere to best practices.
+Develop a RESTful API for a simple task management system that allows users to manage projects and tasks. User authentication is implemented using AWS Cognito.
 
 ## Assignment Requirements
 
-### Project Setup
+### Frameworks & Databases
 
 1. **Initialize Project:**
    - Set up a Node.js project using TypeScript.
-   - Use Express.js or another Node.js framework.
+   - Use Express.js as the framework.
 
 2. **Database Interaction:**
    - Utilize Mongoose as the ORM for MongoDB.
@@ -19,44 +23,47 @@ Develop a RESTful API for a simple task management system that allows users to m
 
 #### User Authentication
 
-- Implement authentication using AWS Cognito User Pool.
-- Users can be created manually for this task.
+- Implement user authentication using AWS Cognito User Pool.
+- Synchronize data between MongoDB and AWS Cognito.
+- Include user confirmation functionality.
 
 #### Project Management
 
-- **CRUD Operations:** Create, Read, Update, and Delete projects.
+- **CRUD Operations:** Implement Create, Read, Update, and Delete functionalities for projects.
 - **Attributes:** Each project should have a name and description.
 
 #### Task Management
 
-- **CRUD Operations:** Create, Read, Update, and Delete tasks within a project.
+- **CRUD Operations:** Implement Create, Read, Update, and Delete functionalities for tasks within a project.
 - **Attributes:** Each task should have a title, description, and status (e.g., todo, in-progress, done).
 
 ### Additional Features
 
 - **Logging & Error Handling:** Implement basic logging and error handling mechanisms.
 - **Pagination:** Implement pagination for GET requests.
-- **Role-Based Access Control:** (Optional) Implement roles like admin and user to manage permissions.
+- **Role-Based Access Control:** Implement roles like admin and user to manage permissions.
 
 ### Testing
 
-- **Unit Testing:** Write unit tests for core functionality using Jest or a similar testing framework.
+- **Unit Testing:** Implement unit tests for core functionalities using Jest.
 
 ## Deployment Suggestion
 
-**Recommended Deployment Approach:**
+### Recommended Deployment Approach
 
-**Containerization:**
+#### Containerization
 
 - **Use Docker to containerize the application.** 
-- **Reason:** Docker provides a consistent environment for the application across different stages of development and production. It packages the application along with its dependencies, ensuring that it runs the same way regardless of where it is deployed. This approach simplifies the deployment process, enhances scalability, and makes it easier to manage and update the application.
+- **Reason:** Docker provides a consistent environment for the application across different stages of development and production. It packages the application along with its dependencies, ensuring consistent behavior regardless of the deployment environment. This approach simplifies the deployment process, enhances scalability, and facilitates easier management and updates of the application.
 
 ## Getting Started
+
+### How to Run It
 
 1. **Clone the Repository:**
    ```bash
    git clone git@github.com:KobiSaada/TaskManagementSystem_MOVEO.git
-   cd task-management-api
+   cd task-management-system
    ```
 
 2. **Install Dependencies:**
@@ -65,7 +72,7 @@ Develop a RESTful API for a simple task management system that allows users to m
    ```
 
 3. **Set Up Environment Variables:**
-   - Create a `.env` file based on `.env.example` and configure the necessary variables.
+   - Create a `.env` file and add the necessary environment variables.
 
 4. **Run the Application:**
    ```bash
@@ -77,10 +84,7 @@ Develop a RESTful API for a simple task management system that allows users to m
    npm test
    ```
 
-## Documentation
-
-For detailed API documentation, refer to the `/docs` directory or visit the [API Documentation](#) (link to be provided).
-
 ---
 
-For further questions or assistance, feel free to reach out. Happy coding!
+For further questions or assistance, feel free to reach out. Happy coding!:smiley:
+
