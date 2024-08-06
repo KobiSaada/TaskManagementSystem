@@ -2,8 +2,7 @@ import { Request, Response } from 'express';
 import TaskModel from '../models/task.model';  // Import your Task model
 import logger from '../utils/logger';
 import { paginate } from '../utils/pagination'; 
-logger.info('This is an informational message');
-logger.error('This is an error message');
+
 
 export const addTask = async (req: Request, res: Response) => {
     try {
@@ -11,6 +10,7 @@ export const addTask = async (req: Request, res: Response) => {
             title: req.body.title,
             description: req.body.description,
             status: req.body.status,
+            priority: req.body.priority,
             project: req.body.projectId  // Assuming project ID is passed in request
         });
         const task = await newTask.save();

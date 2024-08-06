@@ -4,8 +4,6 @@ import { IUser } from '../models/user.model';
 import logger from '../utils/logger';
 import { paginate } from '../utils/pagination'; 
 
-logger.info('This is an informational message');
-logger.error('This is an error message');
 
 export const createProject = async (req: Request, res: Response) => {
     if (!req.user) {

@@ -10,17 +10,12 @@ declare global {
   }
 }
 
-const roles = {
-  Admin: 'admin',
-  User: 'user'
-};
-
 const checkRole = (role: string) => {
   return (req: Request, res: Response, next: NextFunction) => {
     const userRole = req.user?.role;
 
     if (userRole !== role) {
-      return res.status(403).json({ message: 'Forbidden' });
+      return res.status(403).json({ message: 'Forbidden: You do not have the required role to access this resource.' });
     }
 
     next();

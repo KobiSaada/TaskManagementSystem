@@ -1,0 +1,17 @@
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T12:27:13.399Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T12:27:14.180Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T12:27:14.193Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T12:35:56.084Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T12:35:57.492Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T12:35:57.501Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:26:45.944Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:26:47.000Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:26:47.010Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:29:42.875Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:29:43.842Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:29:43.859Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:36:04.152Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:36:05.719Z"}
+{"level":"error","message":"This is an error message","timestamp":"2024-08-01T13:36:05.740Z"}
+{"level":"error","message":"Unexpected token k in JSON at position 13","stack":"SyntaxError: Unexpected token k in JSON at position 13\n    at JSON.parse (<anonymous>)\n    at parse (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:238:16)\n    at done (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:517:28)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1400:12)","timestamp":"2024-08-01T15:28:55.613Z"}
+{"level":"error","message":"Unexpected token k in JSON at position 13","stack":"SyntaxError: Unexpected token k in JSON at position 13\n    at JSON.parse (<anonymous>)\n    at parse (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:238:16)\n    at done (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/user/Documents/TaskManagementSystem_MOVEO/api/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:517:28)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1400:12)","timestamp":"2024-08-06T11:43:34.834Z"}

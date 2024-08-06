@@ -7,17 +7,20 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["jest", "node"] // Include Jest and Node types
   },
   "typeRoots": [
     "./types",
     "./node_modules/@types"
   ],
   "include": [
-    "src/**/*",
-    "app.ts",
-    "index.ts",
-    "api/types/**/*.d.ts" 
+    "src/**/*",             // Your source files
+    "app.ts",               // Entry point files
+    "index.ts",             // Another entry point file
+    "api/types/**/*.d.ts",  // Custom type definitions
+    "tests/**/*.ts",        // Test files directory
+    "**/*.spec.ts"          // Include all .spec.ts files anywhere in the project
   ],
   "exclude": ["node_modules"]
 }

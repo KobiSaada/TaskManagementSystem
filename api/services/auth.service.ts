@@ -1,58 +1,101 @@
-// src/auth/signup.ts
-import { userPool, CognitoUserAttribute ,AuthenticationDetails, CognitoUser } from '../config/awsConfig';
+// services/auth.service.ts
+import { userPool, CognitoUserAttribute, AuthenticationDetails, CognitoUser } from '../config/awsConfig';
+import  User  from '../models/user.model';
+import AWS from 'aws-sdk';
+import dotenv from 'dotenv';
 
+dotenv.config();
+const cognito = new AWS.CognitoIdentityServiceProvider();
 
-/**
- * Signs up a new user using their email as the username.
- * @param email The user's email
- * @param password The user's password
- * @returns A promise resolving to a success message or rejecting with an error
- */
-export const signUp = (email: string, password: string): Promise<string> => {
+export const signUp = (email: string, password: string, username: string, role: string): Promise<string> => {
     return new Promise((resolve, reject) => {
         const attributeList = [
-            new CognitoUserAttribute({
-                Name: 'email',
-                Value: email
-            })
+            new CognitoUserAttribute({ Name: 'email', Value: email }),
+
         ];
 
-        userPool.signUp(email, password, attributeList, [], (err, result) => {
+        userPool.signUp(email, password, attributeList, [], async (err, result) => {
             if (err) {
                 reject(err);
             } else if (result) {
-                const cognitoUser = result.user;
-                resolve(`User created: ${cognitoUser.getUsername()}`);
+                try {
+                    // Create a user record in MongoDB
+                    const cognitoUser = result.user;
+                    const newUser = new User({
+                        email: email,
+                        username: username,
+                        role: role,
+                        cognitoId: cognitoUser.getUsername()  
+                    });
+                    await newUser.save();
+                    resolve(`User created with email: ${email}`);
+                } catch (mongoError) {
+                    reject(mongoError);
+                }
             }
         });
     });
 };
-
-/**
- * Signs in a user using their email.
- * @param email The user's email
- * @param password The user's password
- * @returns A promise resolving to the access token or rejecting with an error
- */
 export const signIn = (email: string, password: string): Promise<string> => {
+
     return new Promise((resolve, reject) => {
         const authenticationDetails = new AuthenticationDetails({
             Username: email,
-            Password: password
+            Password: password,
         });
 
         const cognitoUser = new CognitoUser({
             Username: email,
-            Pool: userPool
+            Pool: userPool,
         });
-
+   
         cognitoUser.authenticateUser(authenticationDetails, {
             onSuccess: (result) => {
                 resolve(`Access Token: ${result.getAccessToken().getJwtToken()}`);
             },
             onFailure: (err) => {
                 reject(err);
+            },
+            newPasswordRequired: (userAttributes, requiredAttributes) => {
+                resolve(JSON.stringify({
+                    message: "New password required",
+                    userAttributes,
+                    requiredAttributes
+                }));
+            },
+        });
+    });
+};
+// Function to confirm user registration
+export const confirmUser = (username: string, verificationCode: string): Promise<string> => {
+    return new Promise((resolve, reject) => {
+        const cognitoUser = new CognitoUser({
+            Username: username,
+            Pool: userPool,
+        });
+
+        cognitoUser.confirmRegistration(verificationCode, true, (err, result) => {
+            if (err) {
+                reject(`Confirmation failed: ${err.message}`);
+            } else {
+                resolve('User confirmed successfully');
             }
         });
     });
+};
+
+// Function to delete a user from Cognito
+export const deleteUserInCognito = async (email: string): Promise<void> => {
+    try {
+        // Delete the user from Cognito using their email as the Username
+        await cognito.adminDeleteUser({
+            UserPoolId: process.env.USER_POOL_ID!, // Ensure this environment variable is set
+            Username: email, // Using email as the Cognito Username
+        }).promise();
+
+        console.log('User deleted from Cognito');
+    } catch (error) {
+        console.error('Error deleting user from Cognito:', error);
+        throw error;
+    }
 };

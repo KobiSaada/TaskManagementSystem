@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import jwksClient from 'jwks-rsa';
 import { IUser } from '../models/user.model';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Creating a JWKS client
 const client = jwksClient({
@@ -49,6 +51,7 @@ const client = jwksClient({
       }
   
       req.user = decoded as IUser; // Assuming you validate or cast appropriately based on your user model
+     console.log('Token verified successfully', {user: req.user })
       next();
     });
   };
