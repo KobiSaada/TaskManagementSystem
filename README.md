@@ -51,7 +51,7 @@ Develop a RESTful API for a simple task management system that allows users to m
 #### Containerization
 
 - **Use Docker to containerize the application.** 
-- **Reason:** Docker provides a consistent environment for the application across different stages of development and production. It packages the application along with its dependencies, ensuring consistent behavior regardless of the deployment environment. This approach simplifies the deployment process, enhances scalability, and facilitates easier management and updates of the application.
+- **Reason:** For handling 10,000 users a day, use Docker for containerization. Docker makes it easy to scale your application by running multiple instances when traffic increases. It also ensures consistency and efficient resource usage, making it ideal for large-scale deployments.
 
 ## Getting Started
 
