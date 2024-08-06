@@ -115,11 +115,11 @@ task-management-system/
 
 6. **Test With Curl:**
    ```bash
-   
- curl -X POST http://localhost:3002/api/users/register \
+    curl -X POST http://localhost:3002/api/users/register \
           -H "Content-Type: application/json" \
           -d '{"email": "kobiman5@gmail.com", "password": "Test123@", "username": "kobisaada", "role": "user"}'
    ```
+   
 
 7. **Run Tests(need to implement):**
    ```bash
